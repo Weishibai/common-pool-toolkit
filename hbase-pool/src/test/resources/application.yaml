@@ -1,0 +1,10 @@
+hbase:
+  zookeeperQuorum: localhost
+
+#    <!-- 每次rpc timeout的时间，这个只对put有效果，对get无效, 默认60000, max有18s的，有1s的，建议设置为4s，快速失败，重试得了 -->
+  rpcTimeout: 4000
+
+#<!-- 表示一次rpc请求失败后，可以重试多少次，默认31，建议修改成3次吧, 对get和put都有效 -->
+#    <!-- 这个值表示一次操作的最长时间，对get有效,对put无效, 设置为4s吧 -->
+  retries: 3
+  operationTimeout: 4000
