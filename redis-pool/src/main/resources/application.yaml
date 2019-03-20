@@ -1,0 +1,15 @@
+jedis:
+  normal:
+    host: localhost
+    port: 6379
+    connectTimeout: 5000
+    operationTimeout: 5000
+
+  shards:
+    - host: localhost
+      port: 100
+      connectTimeout: 100
+      operationTimeout: 100
+
+jedis-pool-enabled: true
+jedis-sharded-pool-enabled: false
