@@ -14,10 +14,10 @@
     <name>common-pool-toolkit</name>
 
     <scm>
-        <connection>scm:git:git@github.com/nicklaus4/common-pool-toolkit.git</connection>
+        <connection>scm:git:https://github.com/nicklaus4/common-pool-toolkit.git</connection>
         <developerConnection>scm:git:git@github.com/nicklaus4/common-pool-toolkit.git</developerConnection>
-        <url>scm:git:git@github.com/nicklaus4/common-pool-toolkit</url>
-        <tag>release-common-pool-toolkit-1.0.1</tag>
+        <url>https://github.com/nicklaus4/common-pool-toolkit</url>
+        <tag>HEAD</tag>
     </scm>
 
     <description>friendly common pools base on spring-boot</description>
