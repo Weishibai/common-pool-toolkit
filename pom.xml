@@ -266,7 +266,7 @@
             <id>release</id>
             <distributionManagement>
                 <snapshotRepository>
-                    <id>nexus-release</id>
+                    <id>nexus-snapshot</id>
                     <url>https://oss.sonatype.org/content/repositories/snapshots/</url>
                 </snapshotRepository>
                 <repository>
