@@ -1,1 +1,1 @@
-org.springframework.boot.autoconfigure.EnableAutoConfiguration=com.nicklaus.redis.config.JedisPoolConfiguration
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=com.github.nicklaus.redis.config.JedisPoolConfiguration

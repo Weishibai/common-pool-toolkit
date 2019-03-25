@@ -1,1 +1,1 @@
-org.springframework.boot.autoconfigure.EnableAutoConfiguration=com.nicklaus.hbase.config.HBaseConfigurator
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=com.github.nicklaus.hbase.config.HBaseConfigurator
