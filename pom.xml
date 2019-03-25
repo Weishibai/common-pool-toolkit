@@ -5,6 +5,7 @@
     <artifactId>common-pool-toolkit</artifactId>
     <packaging>pom</packaging>
     <version>1.0.0-SNAPSHOT</version>
+
     <modules>
         <module>db-pool</module>
         <module>redis-pool</module>
@@ -12,12 +13,30 @@
         <module>http-connection-pool</module>
     </modules>
     <name>common-pool-toolkit</name>
+
     <scm>
-        <connection>scm:git:https://github.com/nicklaus4/common-pool-toolkit.git</connection>
-        <developerConnection>scm:git:https://github.com/nicklaus4/common-pool-toolkit.git</developerConnection>
-        <url>https://github.com/nicklaus4/common-pool-toolkit</url>
+        <connection>scm:git:git@github.com/nicklaus4/common-pool-toolkit.git</connection>
+        <developerConnection>scm:git:git@github.com/nicklaus4/common-pool-toolkit.git</developerConnection>
+        <url>scm:git:git@github.com/nicklaus4/common-pool-toolkit</url>
         <tag>HEAD</tag>
     </scm>
+
+    <description>friendly common pools base on spring-boot</description>
+    <licenses>
+        <license>
+            <name>The Apache License, Version 2.0</name>
+            <url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
+        </license>
+    </licenses>
+
+    <developers>
+        <developer>
+            <name>weishibai</name>
+            <email>nicklausdouble@gmail.com</email>
+            <organization>github</organization>
+            <organizationUrl>https://nicklaus4.github.io/</organizationUrl>
+        </developer>
+    </developers>
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
