@@ -9,3 +9,4 @@ target/
 LOG_PATH_IS_UNDEFINED
 /target-eclipse/
 deploy-test.sh
+release.properties
