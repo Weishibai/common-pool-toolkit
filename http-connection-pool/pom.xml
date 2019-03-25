@@ -6,7 +6,7 @@
         <version>1.0.2-SNAPSHOT</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
-
+    <packaging>jar</packaging>
     <artifactId>http-connection-pool</artifactId>
     <name>http-connection-pool</name>
 
