@@ -9,7 +9,7 @@
     <packaging>jar</packaging>
     <artifactId>http-connection-pool</artifactId>
     <name>http-connection-pool</name>
-
+    <description>http pool</description>
     <dependencies>
         <dependency>
             <groupId>com.squareup.okhttp3</groupId>
@@ -81,6 +81,16 @@
 
     <build>
         <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-source-plugin</artifactId>
+            </plugin>
+
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-javadoc-plugin</artifactId>
+            </plugin>
+
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
