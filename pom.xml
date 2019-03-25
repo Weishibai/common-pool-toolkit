@@ -263,7 +263,10 @@
     <profiles>
         <!-- mvn clean javadoc:jar source:jar deploy -P release -Dgpg.passphrase=xxxx -->
         <profile>
-            <id>release</id>
+            <id>nexus-release</id>
+            <activation>
+                <activeByDefault>true</activeByDefault>
+            </activation>
             <distributionManagement>
                 <snapshotRepository>
                     <id>nexus-snapshot</id>
