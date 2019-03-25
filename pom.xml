@@ -3,7 +3,7 @@
     <groupId>com.github.nicklaus4</groupId>
     <artifactId>common-pool-toolkit</artifactId>
     <packaging>pom</packaging>
-    <version>1.0.3-SNAPSHOT</version>
+    <version>1.0.3</version>
 
     <modules>
         <module>db-pool</module>
@@ -17,7 +17,7 @@
         <connection>scm:git:https://github.com/nicklaus4/common-pool-toolkit.git</connection>
         <developerConnection>scm:git:https://github.com/nicklaus4/common-pool-toolkit.git</developerConnection>
         <url>https://github.com/nicklaus4/common-pool-toolkit</url>
-        <tag>HEAD</tag>
+        <tag>common-pool-toolkit-1.0.3</tag>
     </scm>
 
     <description>friendly common pools base on spring-boot</description>
@@ -319,8 +319,8 @@
                 <activeByDefault>true</activeByDefault>
             </activation>
             <properties>
-                <gpg.executable>gpg2</gpg.executable>
-                <gpg.passphrase></gpg.passphrase>
+                <gpg.executable>gpg</gpg.executable>
+                <gpg.passphrase />
             </properties>
             <distributionManagement>
                 <snapshotRepository>
