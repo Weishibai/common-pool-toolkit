@@ -15,7 +15,7 @@
 
     <scm>
         <connection>scm:git:https://github.com/nicklaus4/common-pool-toolkit.git</connection>
-        <developerConnection>scm:git:git@github.com/nicklaus4/common-pool-toolkit.git</developerConnection>
+        <developerConnection>scm:git:https://github.com/nicklaus4/common-pool-toolkit.git</developerConnection>
         <url>https://github.com/nicklaus4/common-pool-toolkit</url>
         <tag>HEAD</tag>
     </scm>
