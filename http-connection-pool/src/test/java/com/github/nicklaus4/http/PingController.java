@@ -39,10 +39,4 @@ public class PingController {
             return "";
         }
     }
-
-    public static void main(String[] args) {
-        while (true) {
-
-        }
-    }
 }
