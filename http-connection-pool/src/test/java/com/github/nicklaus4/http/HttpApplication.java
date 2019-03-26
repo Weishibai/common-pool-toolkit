@@ -9,7 +9,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
  * @author weishibai
  * @date 2019/03/24 12:30 PM
  */
-@SpringBootApplication(scanBasePackages = "com.nicklaus.http")
+@SpringBootApplication(scanBasePackages = "com.github.nicklaus4.http")
 public class HttpApplication {
 
     public static void main(String[] args) {

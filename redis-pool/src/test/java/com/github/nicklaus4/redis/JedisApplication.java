@@ -9,7 +9,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
  * @author weishibai
  * @date 2019/03/19 3:32 PM
  */
-@SpringBootApplication(scanBasePackages = "com.nicklaus.redis")
+@SpringBootApplication(scanBasePackages = "com.github.nicklaus4.redis")
 public class JedisApplication {
 
     public static void main(String[] args) {
