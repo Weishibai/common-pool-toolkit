@@ -23,4 +23,10 @@ public class HttpConfiguration {
     public OkHttpClient defaultOkHttpClient() {
         return HttpClientFactory.create(HttpClientBuilder.newBuilder());
     }
+
+    @Bean
+    @Conditional(DefaultHttpCondition.class)
+    public DefaultHttpParseService httpParseService() {
+        return new DefaultHttpParseService();
+    }
 }
