@@ -45,7 +45,8 @@ public class MemcachedClientBuilder {
     }
 
     public MemcachedClient build() {
-        final XMemcachedClientBuilder builder = new XMemcachedClientBuilder(addressList.stream().reduce((s, s2) -> s + " " + s2).get());
+        final XMemcachedClientBuilder builder = new XMemcachedClientBuilder(addressList.stream()
+                .reduce((s, s2) -> s + " " + s2).get());
         if (StringUtils.isNotBlank(name)) {
             builder.setName(name);
         }
@@ -91,7 +92,6 @@ public class MemcachedClientBuilder {
         } catch (IOException e) {
             throw new RuntimeException(e);
         }
-
     }
 
     public MemcachedClientBuilder addressList(List<String> addressList) {
