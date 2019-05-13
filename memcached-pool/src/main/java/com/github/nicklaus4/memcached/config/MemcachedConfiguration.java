@@ -17,14 +17,15 @@ import com.github.nicklaus4.memcached.factory.MemcachedClientFacade;
 @Conditional(MemcachedPoolConditional.class)
 public class MemcachedConfiguration {
 
-
     @Autowired
     private MemcachedClientBuilder memcachedClientBuilder;
 
     @Bean
     public MemcachedClientFacade memcachedClientFacade() {
         Objects.requireNonNull(memcachedClientBuilder, "please build memcachedClientBuilder bean");
-        return new MemcachedClientFacade(memcachedClientBuilder.build());
+        final MemcachedClientFacade memcachedClientFacade = new MemcachedClientFacade(memcachedClientBuilder.build());
+        Runtime.getRuntime().addShutdownHook(new Thread(memcachedClientFacade::closeQuietly));
+        return memcachedClientFacade;
     }
 
 }

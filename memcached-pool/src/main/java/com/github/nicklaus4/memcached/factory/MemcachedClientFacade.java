@@ -1,5 +1,7 @@
 package com.github.nicklaus4.memcached.factory;
 
+import java.io.IOException;
+
 import net.rubyeye.xmemcached.MemcachedClient;
 
 /**
@@ -16,6 +18,16 @@ public class MemcachedClientFacade {
 
     public MemcachedClient memcachedClient() {
         return memcachedClient;
+    }
+
+    public void closeQuietly() {
+        try {
+            if (!memcachedClient.isShutdown()) {
+                memcachedClient.shutdown();
+            }
+        } catch (IOException e) {
+            //ig
+        }
     }
 
 }
