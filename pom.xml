@@ -11,6 +11,7 @@
         <module>hbase-pool</module>
         <module>http-connection-pool</module>
         <module>localcache-pool</module>
+        <module>memcached-pool</module>
     </modules>
     <name>common-pool-toolkit</name>
 
@@ -53,10 +54,17 @@
         <spring.version>5.0.6.RELEASE</spring.version>
         <hikari.version>3.3.1</hikari.version>
         <springboot.version>2.0.2.RELEASE</springboot.version>
+        <xmemcached.version>2.4.6</xmemcached.version>
     </properties>
 
     <dependencyManagement>
         <dependencies>
+            <dependency>
+                <groupId>com.googlecode.xmemcached</groupId>
+                <artifactId>xmemcached</artifactId>
+                <version>${xmemcached.version}</version>
+            </dependency>
+
             <dependency>
                 <groupId>com.github.ben-manes.caffeine</groupId>
                 <artifactId>caffeine</artifactId>
